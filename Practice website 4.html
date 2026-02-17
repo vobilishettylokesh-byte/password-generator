@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow;
+            margin: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: green;
+        }
+        form {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid gold;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid chocolate;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Booking Form</h2>
+
+    <form id="bookingForm" onsubmit="return validateForm()">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Date of Event -->
+        <label for="date">Date of Event:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Number of Seats -->
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" required>
+
+        <button type="submit">Book Event</button>
+    </form>
+</body>
+</html>

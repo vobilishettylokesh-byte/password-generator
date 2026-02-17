@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form>
+            <!--Text Input-->
+            <label>Full Name:</label><br>
+            <input type="text" name="name" required><br><br>
+            <!--Email Input-->
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+            <!--Password Input-->
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+            <!--Radio buttons-->
+            <label>Gender:</label><br>
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female
+            <br><br>
+            <!--Check Box-->
+            <label>Skills:</label>
+            <input type="checkbox" name="skill1">HTML & CSS
+            <input type="checkbox" name="skill2">Java
+            <input type="checkbox" name="skill3">C Program<br><br>
+            <!--Dropdown-->
+            <label>Course:</label><br>
+            <select name="course">
+                <option>HTML</option>
+                 <option>VLSI</option>
+                  <option>Embedded Systems</option>
+            </select><br><br>
+            <!--Text Area-->
+            <label>Adress:</label><br>
+            <textarea rows="4" cols="15"></textarea><br><br>
+            <!--Buttons-->
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid TimeTable</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+}
+.box{
+    background: skyblue;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+}
+.lab{
+    grid-column: 3/4 ;
+    background: rebeccapurple ;
+}
+    </style>
+</head>
+<body>
+   <h2>Btech TimeTable using CSS grid</h2>
+   <div class="container">
+    <div class="box">Monday</div>
+    <div class="box">Tuesday</div>
+    <div class="box">Wednesday</div>
+    <div class="box">Thursday</div>
+    <div class="box">Friday</div>
+    <div class="box">Saturday</div>
+
+     <div class="box">Urdu</div>
+      <div class="box">Telugu</div>
+       <div class="box">Sanskrit</div>
+        <div class="box lab">Hindi</div>
+
+         <div class="box">C</div>
+          <div class="box">C++</div>
+           <div class="box">Java</div>
+            <div class="box">HTML</div>
+             <div class="box">CSS</div>
+             <div class="box">Python</div>
+             <div class="box">data</div>
+             <div class="box">Structures</div>
+   </div> 
+</body>
+</html>
